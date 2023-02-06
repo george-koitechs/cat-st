@@ -34,12 +34,14 @@ export const Cart = () => {
         </div>
         {!!items.length ? (
           <>
-            {items.map((item) => (
-              <CartItem key={item.id} item={item} />
-            ))}
-            <CartPromo />
-            <CartAd className="cart__ad" />
-            <CartTotal className="cart__total" />
+            <div className="cart__content">
+              {items.map((item) => (
+                <CartItem key={item.id} item={item} />
+              ))}
+              <CartPromo />
+              <CartAd className="cart__ad" />
+              <CartTotal className="cart__total" />
+            </div>
             <Button fullWidth size="medium" className="cart__checkoutNow" onClick={goToCheckout}>
               Checkout now
             </Button>

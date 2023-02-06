@@ -58,6 +58,10 @@
   font-size: 35px;
   color: $dark;
 }
+.cart__content {
+  height: calc(100% - 89px - 74px);
+  overflow-y: auto;
+}
 .cart__close {
   position: absolute;
   top: 50%;
