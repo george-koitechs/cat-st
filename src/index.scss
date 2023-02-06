@@ -1,0 +1,56 @@
+@use "src/assets/styles/_variables" as *;
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+}
+body {
+  font-family: $Neue;
+  line-height: 1.4;
+  font-weight: 400;
+  color: $dark;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: $container-xl;
+  @media (max-width: $breakpoint-1200) {
+    width: $container-lg;
+  }
+  @media (max-width: $breakpoint-992) {
+    width: $container-md;
+  }
+  @media (max-width: $breakpoint-768) {
+    width: $container-sm;
+  }
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

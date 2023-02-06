@@ -1,0 +1,74 @@
+@use "src/assets/styles/_variables" as *;
+
+$smallX: 10px;
+$largeX: 16px;
+$largeX: 25px;
+
+.button {
+  display: block;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 0 calc((#{$smallX} + 2px) * 2) 0 0;
+  background: 0;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  min-height: 35px;
+  &:hover {
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.55));
+  }
+}
+.button_medium {
+  padding: 0 calc(#{$largeX} * 2) 0 0;
+  min-height: 54px;
+}
+.button_large {
+  padding: 0 calc(#{$largeX} * 2) 0 0;
+  min-height: 64px;
+}
+.buttonInner {
+  background: $dark;
+  color: $light;
+  border: 2px solid $dark;
+  position: relative;
+  z-index: 2;
+  padding: 5px $smallX;
+  border-right-width: 0;
+  font-weight: 500;
+  font-size: 20px;
+  display: block;
+}
+.buttonInner_medium {
+  padding: 8px;
+  font-size: 30px;
+}
+.buttonInner_large {
+  padding: 13px;
+  font-size: 30px;
+}
+.buttonInner_outlined {
+  background: $light;
+  color: $dark;
+}
+.button_fullWidth {
+  width: 100%;
+}
+.buttonArrow {
+  position: absolute;
+  top: 0;
+  right: calc(#{$smallX} + 2px);
+  height: 100%;
+  content: "";
+  aspect-ratio: 1;
+  transform: rotate(45deg);
+  background: $dark;
+  border: 2px solid $dark;
+  z-index: 1;
+}
+.buttonArrow_large {
+  right: $largeX;
+}
+.buttonArrow_outlined {
+  background: $light;
+}
