@@ -22,6 +22,7 @@
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr 116px;
+  margin-left: 1px;
   input {
     font-family: $Neue;
     border: 1px solid #a0a0a0;
@@ -30,6 +31,7 @@
     font-weight: 300;
     font-size: 18px;
     color: $dark;
+    outline: 1px solid $dark;
   }
   button {
     background: #f1eee9;

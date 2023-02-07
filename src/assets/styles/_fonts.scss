@@ -7,17 +7,10 @@
 
 @font-face {
   font-family: "Neue Haas Unica Pro";
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   src: url("../fonts/NeueHaasUnicaThin/font.woff2") format("woff2"),
     url("../fonts/NeueHaasUnicaThin/font.woff") format("woff");
-}
-@font-face {
-  font-family: "Neue Haas Unica Pro";
-  font-weight: 350;
-  font-style: normal;
-  src: url("../fonts/NeueHaasUnicaLight/font.woff2") format("woff2"),
-    url("../fonts/NeueHaasUnicaLight/font.woff") format("woff");
 }
 @font-face {
   font-family: "NeueHaasUnicaUltraLight";
@@ -26,6 +19,13 @@
   src: url("../fonts/NeueHaasUnicaUltraLight/font.woff2") format("woff2"),
     url("../fonts/NeueHaasUnicaUltraLight/font.woff") format("woff");
 }
+//@font-face {
+//  font-family: "Neue Haas Unica Pro";
+//  font-weight: 350;
+//  font-style: normal;
+//  src: url("../fonts/NeueHaasUnicaLight/font.woff2") format("woff2"),
+//    url("../fonts/NeueHaasUnicaLight/font.woff") format("woff");
+//}
 @font-face {
   font-family: "Neue Haas Unica Pro";
   font-weight: 400;

@@ -70,13 +70,22 @@
 .checkout__action {
   margin-left: auto;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 350;
   font-size: 20px;
   text-align: right;
-  text-decoration-line: underline;
   color: #4b4b4b;
   max-width: max-content;
   line-height: 1;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    background: #4b4b4b;
+    height: 1px;
+  }
 }
 .checkout__shipping {
   margin: 61px 0 25px;

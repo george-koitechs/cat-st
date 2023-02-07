@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useResolvedPath } from "react-router-dom";
 import { shallow } from "zustand/shallow";
 
 import { useCartStore } from "@/zustand/cart.store";
@@ -14,6 +14,8 @@ import "./cart.styles.scss";
 
 export const Cart = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const isCheckoutPage = location.pathname === "/checkout";
   const [isOpened, close, items] = useCartStore((state) => [state.isOpened, state.close, state.items], shallow);
 
   function goToCheckout() {
@@ -39,10 +41,10 @@ export const Cart = () => {
                 <CartItem key={item.id} item={item} />
               ))}
               <CartPromo />
-              <CartAd className="cart__ad" />
-              <CartTotal className="cart__total" />
+              {isCheckoutPage && <CartAd className="cart__ad" />}
             </div>
-            <Button fullWidth size="medium" className="cart__checkoutNow" onClick={goToCheckout}>
+            <CartTotal className="cart__total" />
+            <Button variant="v2" className="cart__checkoutNow" onClick={goToCheckout}>
               Checkout now
             </Button>
           </>

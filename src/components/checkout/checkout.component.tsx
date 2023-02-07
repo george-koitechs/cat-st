@@ -175,7 +175,7 @@ export const Checkout = () => {
             <CartPromo />
             <CartTotal withMT />
           </div>
-          <Button fullWidth size="large" type="submit" className="checkout__payNow">
+          <Button variant="v3" type="submit" className="checkout__payNow">
             Pay now
           </Button>
 

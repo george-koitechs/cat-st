@@ -18,9 +18,7 @@ export const CartAd: React.FC<React.HTMLProps<HTMLDivElement>> = (props) => {
             <p className="cartAd__price">$122.50</p>
             <p className="cartAd__price cartAd__price_old">$129.00</p>
           </div>
-          <Button variant="outlined" fullWidth>
-            Add now
-          </Button>
+          <Button variant="v1">Add now</Button>
         </div>
       </div>
     </div>
